@@ -9,7 +9,7 @@ if (!defined('ABSPATH'))
 define('IS_VITE_DEVELOPMENT', true);
 
 // Include needed functions
-include "inc/inc.js.php";
+include "inc/inc.vite.php";
 include "inc/login-screen.php";
 include "inc/navbar.php";
 include "inc/sidebars.php";

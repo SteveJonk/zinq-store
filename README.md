@@ -1,4 +1,4 @@
 # Zinq Redesign
 
-A redesign for the website of Zinq.
+A design for the webshop of Zinq.
 It's a gsap powered website.
