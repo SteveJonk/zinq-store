@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 20;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 300px;
+  background-color: $common-black;
+  flex-shrink: 0;
+  &__header {
+    width: 100%;
+    &__logo {
+      height: 150px;
+      max-width: 80%;
+    }
+  }
+  @include Tablet {
+    width: 250px;
+  }
+  @include Mobile {
+    width: 100%;
+    left: -100%;
+  }
+}
+
+.content {
+  position: relative;
+  width: calc(100% - 300px);
+  margin-left: auto;
+  box-sizing: border-box;
+  @include Tablet {
+    width: calc(100% - 250px);
+  }
+  @include Mobile {
+    width: 100%;
+  }
+  & > section {
+    padding: 20px 40px;
+    @include Mobile {
+      padding: 20px 20px;
+    }
+    &:first-of-type {
+      padding: 0;
+    }
+  }
+}
