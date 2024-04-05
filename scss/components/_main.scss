@@ -2,7 +2,9 @@
   display: flex;
 }
 
-.navigation {
+.page .navigation,
+.navigation,
+#navigation .navigation {
   position: fixed;
   z-index: 20;
   height: 100%;
@@ -24,6 +26,7 @@
   @include Mobile {
     width: 100%;
     left: -100%;
+    z-index: 30;
   }
 }
 
@@ -32,6 +35,9 @@
   width: calc(100% - 300px);
   margin-left: auto;
   box-sizing: border-box;
+  z-index: 25;
+  box-shadow: -10px -10px 10px $grey-400;
+  height: 100vh;
   @include Tablet {
     width: calc(100% - 250px);
   }

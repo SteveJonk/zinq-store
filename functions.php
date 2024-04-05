@@ -9,12 +9,13 @@ if (!defined('ABSPATH'))
 define('IS_VITE_DEVELOPMENT', true);
 
 // Include needed functions
-include "inc/inc.vite.php";
-include "inc/login-screen.php";
-include "inc/navbar.php";
-include "inc/sidebars.php";
-include "inc/group-block-style.php";
-include "inc/image-block-style.php";
+require_once "inc/inc.vite.php";
+require_once "inc/login-screen.php";
+require_once "inc/navbar.php";
+require_once "inc/sidebars.php";
+require_once "inc/group-block-style.php";
+require_once "inc/image-block-style.php";
+require_once "inc/woocommerce/product-list-page.php";
 
 
 function theme_features()
