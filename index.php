@@ -1,8 +1,4 @@
-<?php get_header();
-
-get_template_part('template-parts/intro');
-
-?>
+<?php get_header(); ?>
 
 
 
@@ -24,22 +20,10 @@ get_template_part('template-parts/intro');
 
 <div class="content">
 
-    <?php
-
-    $args = array(
-        'post_type' => 'page',
-        'orderby' => 'menu_order',
-        'order' => 'ASC'
-    );
-
-    query_posts($args);
-
-    while (have_posts()) {
+    <?php while (have_posts()) {
         the_post();
-        get_template_part('template-parts/page-section');
-    }
-
-    wp_reset_query(); ?>
+        the_content();
+    } ?>
 
 </div>
 

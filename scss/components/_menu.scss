@@ -26,17 +26,13 @@
         }
         & a {
           color: white;
-          display: table;
+          display: flex;
           text-decoration: none;
           padding: 0 20px;
           box-sizing: border-box;
           height: 80px;
           width: 100%;
-          & > .inner {
-            display: table-cell;
-            vertical-align: middle;
-            height: 100%;
-          }
+          align-items: center;
         }
         & .progress-bar {
           position: absolute;

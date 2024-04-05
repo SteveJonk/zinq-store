@@ -1,5 +1,4 @@
 import gsap from 'gsap'
-import { tl as tlIntro } from '../animations/intro'
 
 const tl = gsap.timeline()
 
@@ -15,8 +14,6 @@ export const toggleMenu = () => {
 }
 
 export const openMenu = () => {
-  tlIntro.progress(3).pause()
-
   tl.to('#navigation', {
     x: '100%',
     ease: 'slow(0.3, 0.2, false)',

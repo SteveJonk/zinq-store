@@ -1,1 +1,6 @@
-import{animateImageOnScroll,intro,menuProgress}from"./animations";import{smoothScrollLinks,toggleMenu}from"./menu";intro(),smoothScrollLinks(),animateImageOnScroll(),toggleMenu(),menuProgress();
+import { animateImageOnScroll } from './animations'
+import { smoothScrollLinks, toggleMenu } from './menu'
+
+smoothScrollLinks()
+animateImageOnScroll()
+toggleMenu()

@@ -6,7 +6,9 @@ const imgSelector = '.page img'
 
 export const animateImageOnScroll = () => {
   const scrollElements = gsap.utils.toArray(imgSelector)
-  scrollElements.forEach((element: any) => {
+  scrollElements.forEach((element: HTMLElement) => {
+    // Add this if logo should not be animated
+    // if (element.classList.contains('navigation__header__logo')) return
     gsap.from(element, {
       opacity: 0,
       y: 24,

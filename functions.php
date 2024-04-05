@@ -22,6 +22,8 @@ function theme_features()
 
     add_theme_support('woocommerce');
     add_theme_support('wp-block-styles');
+    add_theme_support('appearance-tools');
+    add_theme_support('align-wide');
 
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
 
@@ -29,6 +31,5 @@ function theme_features()
     add_theme_support('post-thumbnails');
     add_post_type_support('post', 'page-attributes');
 };
-
 
 add_action('after_setup_theme', 'theme_features');

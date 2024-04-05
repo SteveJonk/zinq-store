@@ -6,7 +6,6 @@
 
 /* Components  */
 @import './components/container';
-@import './components/intro';
 @import './components/main';
 @import './components/admin-login';
 @import './components/menu';
@@ -33,5 +32,5 @@ body {
 }
 
 #wpadminbar {
-  z-index: 19;
+  z-index: 21;
 }
