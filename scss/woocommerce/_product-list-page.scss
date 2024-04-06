@@ -1,0 +1,15 @@
+.archive {
+  & .content {
+    padding-top: 20px;
+    & ul.products {
+      & li.product {
+        & .onsale {
+          background-color: $common-black;
+        }
+        & .price {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

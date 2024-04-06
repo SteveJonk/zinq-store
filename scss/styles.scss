@@ -11,6 +11,11 @@
 @import './components/menu';
 @import './components/hamburger-button';
 @import './components/forms';
+@import './components/select';
+
+/* WooCommerce */
+@import './woocommerce/product-list-page';
+@import './woocommerce/product-detail-page';
 
 /* Base stuff */
 html {

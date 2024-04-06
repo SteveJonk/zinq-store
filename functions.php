@@ -16,6 +16,7 @@ require_once "inc/sidebars.php";
 require_once "inc/group-block-style.php";
 require_once "inc/image-block-style.php";
 require_once "inc/woocommerce/product-list-page.php";
+require_once "inc/woocommerce/product-detail-page.php";
 
 
 function theme_features()
@@ -23,7 +24,6 @@ function theme_features()
 
     add_theme_support('woocommerce');
     add_theme_support('wp-block-styles');
-    add_theme_support('appearance-tools');
     add_theme_support('align-wide');
 
     register_nav_menu('headerMenuLocation', 'Header Menu Location');

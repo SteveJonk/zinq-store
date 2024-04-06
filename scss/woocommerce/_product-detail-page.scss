@@ -1,0 +1,13 @@
+.woocommerce.single {
+  & .content {
+    padding-top: 20px;
+    .summary {
+      & .price {
+        color: $primary-color;
+      }
+    }
+    button.button {
+      background-color: $common-black;
+    }
+  }
+}

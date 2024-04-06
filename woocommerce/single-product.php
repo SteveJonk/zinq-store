@@ -11,7 +11,7 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see         https://docs.woocommerce.com/document/template-structure/
+ * @see         https://woo.com/document/template-structure/
  * @package     WooCommerce\Templates
  * @version     1.6.4
  */
@@ -21,44 +21,59 @@ if (!defined('ABSPATH')) {
 }
 
 get_header('shop'); ?>
-<div class="container">
-    <?php
-    /**
-     * woocommerce_before_main_content hook.
-     *
-     * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-     * @hooked woocommerce_breadcrumb - 20
-     */
-    do_action('woocommerce_before_main_content');
-    ?>
-
-    <?php while (have_posts()) : ?>
-        <?php the_post(); ?>
-
-        <?php wc_get_template_part('content', 'single-product'); ?>
-
-    <?php endwhile; // end of the loop. 
-    ?>
-
-    <?php
-    /**
-     * woocommerce_after_main_content hook.
-     *
-     * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-     */
-    do_action('woocommerce_after_main_content');
-    ?>
+<div id="open_menu" class="m_button">
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
-<?php
-/**
- * woocommerce_sidebar hook.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action('woocommerce_sidebar');
-?>
 
-<?php
-get_footer('shop');
+<div id="navigation" class="navigation">
+    <div id="close_menu" class="m_close"></div>
+    <div class="navigation__header">
+        <img class="navigation__header__logo" src="<?php echo get_theme_mod('navbar_logo'); ?>" />
+    </div>
+    <div class="navigation__body">
+        <?php get_template_part('template-parts/menu') ?>
+    </div>
+</div>
 
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+<div class="content">
+    <div class="container">
+        <?php
+        /**
+         * woocommerce_before_main_content hook.
+         *
+         * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+         * @hooked woocommerce_breadcrumb - 20
+         */
+        do_action('woocommerce_before_main_content');
+        ?>
+
+        <?php while (have_posts()) : ?>
+            <?php the_post(); ?>
+
+            <?php wc_get_template_part('content', 'single-product'); ?>
+
+        <?php endwhile; // end of the loop. 
+        ?>
+
+        <?php
+        /**
+         * woocommerce_after_main_content hook.
+         *
+         * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+         */
+        do_action('woocommerce_after_main_content');
+        ?>
+
+        <?php
+        /**
+         * woocommerce_sidebar hook.
+         *
+         * @hooked woocommerce_get_sidebar - 10
+         */
+        do_action('woocommerce_sidebar');
+        ?>
+    </div>
+</div>
+<?php get_footer();

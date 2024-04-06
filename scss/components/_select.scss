@@ -1,0 +1,19 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 5px 10px;
+  font-weight: 300;
+  font-family: $text-main;
+  border-color: $grey-200;
+  transition: border-color 0.3s;
+  cursor: pointer;
+  &:focus-visible,
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: $common-black;
+  }
+}

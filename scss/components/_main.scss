@@ -13,6 +13,8 @@
   width: 300px;
   background-color: $common-black;
   flex-shrink: 0;
+  box-shadow: inset -10px 0 9px -7px $grey-400;
+
   &__header {
     width: 100%;
     &__logo {
@@ -36,8 +38,6 @@
   margin-left: auto;
   box-sizing: border-box;
   z-index: 25;
-  box-shadow: -10px -10px 10px $grey-400;
-  height: 100vh;
   @include Tablet {
     width: calc(100% - 250px);
   }
