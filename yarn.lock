@@ -52,12 +52,24 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@types/jquery@^3.5.29":
+  "integrity" "sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg=="
+  "resolved" "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.29.tgz"
+  "version" "3.5.29"
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/node@>= 14":
   "integrity" "sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-20.11.30.tgz"
   "version" "20.11.30"
   dependencies:
     "undici-types" "~5.26.4"
+
+"@types/sizzle@*":
+  "integrity" "sha512-0vWLNK2D5MT9dg0iOo8GlKguPAU02QjmZitPEsXRuJXU/OGIOt9vT9Fc26wtYuavLxtO45v9PGleoL9Z0k1LHg=="
+  "resolved" "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.8.tgz"
+  "version" "2.3.8"
 
 "acorn@^8.8.2":
   "integrity" "sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg=="

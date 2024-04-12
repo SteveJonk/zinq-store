@@ -1,0 +1,48 @@
+.woocommerce,
+.home,
+.single {
+  & .woocommerce-notices-wrapper {
+    max-width: 100%;
+    margin-bottom: 10px;
+    & .woocommerce-info,
+    & .woocommerce-message {
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+      @include Mobile {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+      border-top: none;
+      font-weight: 500;
+      background-color: $grey-100;
+      color: $grey-300;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      &::before {
+        color: $primary-color;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      & a {
+        position: absolute;
+        right: 10px;
+        justify-self: flex-end;
+        text-decoration: none;
+        color: $grey-300;
+        transition: color 0.2s;
+        &:hover {
+          color: $common-black;
+        }
+        @include Mobile {
+          position: static;
+          // width: 100%;
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}

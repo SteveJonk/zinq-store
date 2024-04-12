@@ -25,6 +25,7 @@ function theme_features()
     add_theme_support('woocommerce');
     add_theme_support('wp-block-styles');
     add_theme_support('align-wide');
+    add_theme_support('block-template-parts');
 
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
 
