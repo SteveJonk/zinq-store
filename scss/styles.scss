@@ -7,13 +7,14 @@
 /* Components  */
 @import './components/container';
 @import './components/main';
-@import './components/admin-login';
 @import './components/menu';
 @import './components/hamburger-button';
 @import './components/forms';
 @import './components/select';
 
 /* WooCommerce */
+@import './woocommerce/account';
+@import './woocommerce/product-block';
 @import './woocommerce/product-list-page';
 @import './woocommerce/product-detail-page';
 @import './woocommerce/notices';

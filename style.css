@@ -12,3 +12,8 @@
     Tags: animation, gsap, single-page
 
 */
+
+.login #login h1 a {
+  background-image: url('assets/images/ZinqLogo.svg');
+  background-color: black;
+}

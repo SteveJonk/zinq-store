@@ -21,7 +21,7 @@ export const openMenu = () => {
   }).from('#navbar li', {
     x: '-100%',
     stagger: 0.1,
-    duration: 1,
+    duration: 0.6,
   })
   document.documentElement.style.overflowY = 'hidden'
 }

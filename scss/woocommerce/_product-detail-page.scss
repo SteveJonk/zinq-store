@@ -79,8 +79,26 @@
   }
   & .woocommerce-tabs {
     & .tabs {
+      padding-left: 0 !important;
+      box-sizing: border-box;
       &::before {
-        border-bottom: none !important;
+        display: none !important;
+      }
+      & li {
+        background-color: white !important;
+        border: 1px solid $common-black !important;
+        color: $common-black !important;
+        border-radius: 3px !important;
+        margin-left: 0 !important;
+        margin-right: 5px !important;
+        &::before,
+        &::after {
+          content: none !important;
+        }
+        &.active {
+          background-color: $common-black !important;
+          color: white !important;
+        }
       }
     }
   }

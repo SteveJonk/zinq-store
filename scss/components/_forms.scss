@@ -8,6 +8,25 @@
   }
 }
 
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'] {
+  padding: 10px 10px 7px 10px;
+}
+
+.selection {
+  & .select2-selection {
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    height: 35px;
+    padding-top: 3px;
+    font-size: 14px;
+    & .select2-selection__arrow {
+      top: 5px;
+    }
+  }
+}
+
 // Contact forms
 form.wpcf7-form {
   & .wpcf7-form-control {
